@@ -1,5 +1,4 @@
 #include <iostream>
-#include "../include/questao6/bternaria.h"
 
 bool busca_ternaria (int *v, int ini, int fim, int x) {
 	if (ini > fim) return false;
