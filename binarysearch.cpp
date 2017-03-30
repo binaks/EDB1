@@ -1,5 +1,6 @@
 #include <iostream>
 
+using std::cin;
 using std::cout;
 using std::endl;
 
@@ -13,7 +14,10 @@ bool binarySearch (int *v, int x, int inicio, int fim) {
 
 int main () {
 	int v[] = {1, 4, 7, 8, 10, 15};
-	int x = 10;
+	int x;
+
+	cout << "Digite um valor inteiro: " << endl;
+	cin >> x;
 
 	if (binarySearch(v, x, 0, 5) == true) {
 		cout << "Inteiro encontrado!" << endl;
