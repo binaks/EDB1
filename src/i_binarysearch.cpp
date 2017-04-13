@@ -1,4 +1,5 @@
 #include <iostream>
+#include "../include/funcoes.h"
 
 bool i_binary (int x, int *v, int inicio, int fim) {
 	int k;

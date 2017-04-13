@@ -1,4 +1,5 @@
 #include <iostream>
+#include "../include/funcoes.h"
 
 bool binarySearch (int *v, int x, int inicio, int fim) {
 	if (fim < inicio) return false;

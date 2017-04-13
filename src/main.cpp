@@ -1,6 +1,7 @@
 #include <iostream>
 #include <cstdlib>
 #include <ctime>
+#include "../include/funcoes.h"
 
 using std::cin;
 using std::cout;

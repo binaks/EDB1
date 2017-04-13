@@ -1,4 +1,5 @@
 #include <iostream>
+#include "../include/funcoes.h"
 
 bool i_linear (int *v, int x, int n) {
 	for (int i = 0; i < n; i++)
