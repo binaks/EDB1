@@ -10,8 +10,8 @@ using std::endl;
 int main () {
 	int n;
 
-	cout<<"Digite o tamanho do vetor: ";
-	cin>>n;
+	cout << "Digite o tamanho do vetor: ";
+	cin >> n;
 
 	int v[n];
 
@@ -19,17 +19,14 @@ int main () {
 
 	int x = rand() % 100;
 
-	cout<<x<<endl;
-
 	for (int i=0; i<n; i++) {
 		v[i] = rand() % 100;
 	}
 
-	quickSort (v, 0, n);	
+	quickSort (v, 0, n);
 
-	for (int ii=0; ii<n; ii++) {
-		cout<<v[ii]<<" ";
-	}
-		
-	cout<<endl;
+	cout << "Busca binária recursiva: " << binarySearch (v, x, 0, n) << "ms" << endl;
+	cout << "Busca binária iterativa: " << i_binary (x, v, 0, n) << "ms" << endl;
+	cout << "Busca sequencial recursiva: " << linearSearch (v, x, n) << "ms" << endl;
+	cout << "Busca sequencial iterativa: " << i_linear (v, x, n) << "ms" << endl;	
 }

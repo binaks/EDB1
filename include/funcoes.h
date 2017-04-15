@@ -3,13 +3,13 @@
 
 #include <iostream>
 
-bool binarySearch (int *v, int x, int inicio, int fim);
+double binarySearch (int *v, int x, int inicio, int fim);
 
-bool i_binary (int x, int *v, int inicio, int fim);
+double i_binary (int x, int *v, int inicio, int fim);
 
-bool linearSearch (int *v, int x, int n);
+double linearSearch (int *v, int x, int n);
 
-bool i_linear (int *v, int x, int n);
+double i_linear (int *v, int x, int n);
 
 void quickSort (int *v, int left, int right);
 
