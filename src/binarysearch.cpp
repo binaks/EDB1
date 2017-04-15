@@ -1,7 +1,10 @@
 #include <iostream>
+#include <ctime>
 #include "../include/funcoes.h"
 
 bool binarySearch (int *v, int x, int inicio, int fim) {
+	clock_t tStart = clock();
+
 	if (fim < inicio) return false;
 	int k = (fim + inicio)/2;
 	if (v[k] == x) return true;

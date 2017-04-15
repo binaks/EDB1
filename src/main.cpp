@@ -8,24 +8,28 @@ using std::cout;
 using std::endl;
 
 int main () {
-	int x;
 	int n;
 
 	cout<<"Digite o tamanho do vetor: ";
 	cin>>n;
 
 	int v[n];
-	
-	cout<<"Digite um inteiro: ";
-	cin>>x;
 
 	srand(time(NULL));
 
+	int x = rand() % 100;
+
+	cout<<x<<endl;
+
 	for (int i=0; i<n; i++) {
 		v[i] = rand() % 100;
-		
-		cout<<v[i]<<" ";
 	}
-	
+
+	quickSort (v, 0, n);	
+
+	for (int ii=0; ii<n; ii++) {
+		cout<<v[ii]<<" ";
+	}
+		
 	cout<<endl;
 }

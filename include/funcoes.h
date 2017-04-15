@@ -11,4 +11,6 @@ bool linearSearch (int *v, int x, int n);
 
 bool i_linear (int *v, int x, int n);
 
+void quickSort (int *v, int left, int right);
+
 #endif

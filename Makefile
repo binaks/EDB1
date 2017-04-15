@@ -19,7 +19,7 @@ all: analise
 debug: CFLAGS += -g -O0
 debug: analise
 
-analise: $(OBJ_DIR)/binarysearch.o $(OBJ_DIR)/i_binarysearch.o $(OBJ_DIR)/linearsearch.o $(OBJ_DIR)/i_linearsearch.o $(OBJ_DIR)/main.o
+analise: $(OBJ_DIR)/binarysearch.o $(OBJ_DIR)/i_binarysearch.o $(OBJ_DIR)/linearsearch.o $(OBJ_DIR)/i_linearsearch.o $(OBJ_DIR)/quicksort.o  $(OBJ_DIR)/main.o
 	$(CC) $(CFLAGS) -o $(BIN_DIR)/$@ $^
 
 $(OBJ_DIR)/binarysearch.o: $(SRC_DIR)/binarysearch.cpp $(INC_DIR)/funcoes.h
@@ -33,6 +33,10 @@ $(OBJ_DIR)/linearsearch.o: $(SRC_DIR)/linearsearch.cpp $(INC_DIR)/funcoes.h
 
 $(OBJ_DIR)/i_linearsearch.o: $(SRC_DIR)/i_linearsearch.cpp $(INC_DIR)/funcoes.h
 	$(CC) -c $(CFLAGS) -o $@ $<
+
+$(OBJ_DIR)/quicksort.o: $(SRC_DIR)/quicksort.cpp $(INC_DIR)/funcoes.h
+	$(CC) -c $(CFLAGS) -o $@ $<
+
 
 $(OBJ_DIR)/main.o: $(SRC_DIR)/main.cpp
 	$(CC) -c $(CFLAGS) -o $@ $<
