@@ -7,7 +7,7 @@ set title "Busca Binária Iterativa"
 set autoscale
 
 set xlabel "tamanho da base de busca"
-set ylabel "média do tempo de execução (em ms)"
+set ylabel "média do tempo de execução (em segundos)"
 
 set xtic auto
 set ytic auto
@@ -17,4 +17,4 @@ set output "graph4.png"
 
 set style textbox transparent margins 1.0, 1.0 border
 
-plot "binariaI.dat" using 1:2 title 'Beam' with line
+plot "../data/binariaI.dat" using 1:2 title 'Beam' with line

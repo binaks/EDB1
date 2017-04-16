@@ -1,11 +1,21 @@
 #include <iostream>
-#include <ctime>
+#include <chrono>
 #include "../include/funcoes.h"
 
 double linearSearch (int *v, int x, int n) {
-	clock_t tStart = clock();
+	auto start = std::chrono::steady_clock::now();
 
-	if (n <= 0) return (clock() - tStart)/double(CLOCKS_PER_SEC)*1000;
-	if (v[n-1] == x) return (clock() - tStart)/double(CLOCKS_PER_SEC)*1000;
+	if (n <= 0) {
+                auto end = std::chrono::steady_clock::now();
+                double elapsed = std::chrono::duration_cast<std::chrono::duration<double>>(end - start).count();
+                return elapsed;
+	}
+
+	if (v[n-1] == x) {
+                auto end = std::chrono::steady_clock::now();
+                double elapsed = std::chrono::duration_cast<std::chrono::duration<double>>(end - start).count();
+                return elapsed;
+	}
+
 	return linearSearch(v, x, n-1);
 }

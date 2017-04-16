@@ -7,10 +7,10 @@
 using namespace std;
 
 int main () {
-	ofstream binR ("binariaR.dat", ios::app);
-	ofstream binI ("binariaI.dat", ios::app);
-	ofstream seqR ("sequencialR.dat", ios::app);
-	ofstream seqI ("sequencialI.dat", ios::app);
+	ofstream binR ("data/binariaR.dat", ios::app);
+	ofstream binI ("data/binariaI.dat", ios::app);
+	ofstream seqR ("data/sequencialR.dat", ios::app);
+	ofstream seqI ("data/sequencialI.dat", ios::app);
 
 	for (int n = 0; n <= 5000; n = n + 100) {
 		double mediaBinR = 0;
@@ -36,11 +36,6 @@ int main () {
 			mediaSeqR += linearSearch (v, x, n);
 			mediaSeqI += i_linear (v, x, n);
 		}
-
-		mediaBinR = mediaBinR/10;
-		mediaBinI = mediaBinI/10;
-		mediaSeqR = mediaSeqR/10;
-		mediaSeqI = mediaSeqI/10;
 
 		binR << n << " " << mediaBinR << endl;
 		binI << n << " " << mediaBinI << endl;

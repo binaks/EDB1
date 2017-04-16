@@ -10,7 +10,7 @@ BIN_DIR=./bin
 DOC_DIR=./doc
 TEST_DIR=./test
 
-CFLAGS = 
+CFLAGS = -std=c++11
 
 .PHONY: all clean debug
 
