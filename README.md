@@ -10,7 +10,11 @@ O programa calcula a média do tempo gasto para fazer buscas através dos algori
 O programa guarda os resultados em arquivos separados. Usando gnuplot, é possível construir gráficos dos resultados obtidos. Na pasta "graphs" encontram-se exemplos de gráficos que se pode obter com o programa.
 
 graph.png: gráfico comparando os tempos médios dos 4 algoritmos de busca.
+
 graph1.png: gráfico comparando os tempos da busca binária recursiva.
+
 graph2.png: gráfico comparando os tempos da busca binária iterativa.
+
 graph3.png: gráfico comparando os tempos da busca sequencial recursiva.
+
 graph4.png: gráfico comparando os tempos da busca sequencial iterativa.
