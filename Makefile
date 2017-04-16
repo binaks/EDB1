@@ -43,4 +43,5 @@ $(OBJ_DIR)/main.o: $(SRC_DIR)/main.cpp
 
 clean:
 	$(RM) $(BIN_DIR)/*
-	$(RM) $(OBJ_DIR)/* 
+	$(RM) $(OBJ_DIR)/*
+	$(RM) ./data/*

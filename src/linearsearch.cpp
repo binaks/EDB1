@@ -5,7 +5,7 @@
 double linearSearch (int *v, int x, int n) {
 	auto start = std::chrono::steady_clock::now();
 
-	if (n <= 0) {
+	if (n == 0) {
                 auto end = std::chrono::steady_clock::now();
                 double elapsed = std::chrono::duration_cast<std::chrono::duration<double>>(end - start).count();
                 return elapsed;
